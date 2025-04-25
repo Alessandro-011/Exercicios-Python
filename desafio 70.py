@@ -2,7 +2,7 @@ palavra = 'LOJA DO NEGÃO'
 total = mais_de_mil = 0
 menor = 0
 contadeiro = 0
-cumpensa = ' '
+cumpensa = ''
 color = f'\033[34m{palavra}\033[0m'
 final = 'Fim dessa Merda!'
 print('-' * 30)
@@ -31,5 +31,5 @@ while True:
 print(f'{final:-^30}')
 print(f'O total da compra foi de \033[33mR${total:.2f}\033[0m')
 print(f'Temos \033[33m{mais_de_mil}\033[0m produtos que custam mais de \033[33mR$1.000\033[0m reais.')
-print(f'O produto mais barato foi o \033[33m{cumpensa}\033[0m, que custou \033[33mR${menor:.2f}\033[0m')
+print(f'O produto mais barato foi: \033[33m{cumpensa}\033[0m, que custou \033[33mR${menor:.2f}\033[0m')
 
