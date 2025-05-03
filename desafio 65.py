@@ -1,8 +1,7 @@
-'''soma = quant = maior = menor = media = 0
-
+soma = quant = maior = menor = media = 0
 resp = 'S'
 while resp in 'Ss':
-    num = int(input('Digite uum número: '))
+    num = int(input('Digite um número: '))
     soma += num
     quant += 1
     if quant == 1:
@@ -15,7 +14,7 @@ while resp in 'Ss':
     resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
 media = soma / quant
 print(f'Você digitou {quant} números e a média foi {media}.')
-print(f'O maior valor foi {maior} e o menor valor foi {menor}.')'''
+print(f'O maior valor foi {maior} e o menor valor foi {menor}.')
 
 
 
