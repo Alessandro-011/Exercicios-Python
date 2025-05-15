@@ -1,25 +1,26 @@
-quantia = int(input('Qual valor você deseja sacar? '))
+quantia = int(input('Qual o valor que  deseja sacar? '))
 total = quantia
-cédula = 50
-cédulas_totais = 0
+quantidades_de_notas_totais = 0
+nota = 50
+
 while True:
-    if total >= cédula:
-        total -= cédula
-        cédulas_totais += 1
+    if total >=  nota:
+        total -= nota
+        quantidades_de_notas_totais += 1
     else:
-        if cédulas_totais > 0:
-            print(f'Total de {cédulas_totais} cédulas de R${cédula},00.')
-        if cédulas_totais == 1:
-            print(f'Total de {cédulas_totais} cédula de R${cédula},00.')
-        if cédula == 50:
-            cédula = 20
-        elif cédula == 20:
-            cédula = 10
-        elif cédula == 10:
-            cédula = 1
-        cédulas_totais = 0
+        if quantidades_de_notas_totais > 0:
+            print(f'Total de {quantidades_de_notas_totais} cédulas de R${nota}')
+
+        if nota == 50:
+            nota = 20
+        elif nota == 20:
+            nota = 10
+        elif nota == 10:
+            nota = 1
+
+        quantidades_de_notas_totais = 0
+
         if total == 0:
             break
-
 
 
